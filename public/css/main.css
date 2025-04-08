@@ -1,0 +1,268 @@
+/* 通用样式 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+}
+
+/* iPhone设备模拟 */
+.iphone-container {
+  width: 390px;
+  height: 844px;
+  background-color: #ffffff;
+  border-radius: 44px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border: 12px solid #1d1d1f;
+  display: inline-block;
+}
+
+/* 状态栏 */
+.status-bar {
+  height: 44px;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
+}
+
+.status-bar-left {
+  display: flex;
+  align-items: center;
+}
+
+.status-bar-center {
+  font-weight: 600;
+}
+
+.status-bar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* 主内容区域 */
+.app-content {
+  height: calc(100% - 134px); /* 减去状态栏和底部导航栏的高度 */
+  overflow-y: auto;
+  position: relative;
+}
+
+/* 底部导航栏 */
+.tab-bar {
+  height: 90px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #e0e0e0;
+  padding-bottom: 20px; /* 为Home Indicator留出空间 */
+}
+
+.tab-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #8e8e93;
+  font-size: 10px;
+  padding: 5px 0;
+}
+
+.tab-item.active {
+  color: #007aff;
+}
+
+.tab-icon {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+/* 搜索框样式 */
+.search-container {
+  padding: 15px 20px;
+  position: relative;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 18px;
+  padding: 10px 15px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  margin-left: 10px;
+  outline: none;
+}
+
+/* 对话界面样式 */
+.message-container {
+  padding: 10px 20px;
+}
+
+.message {
+  margin-bottom: 20px;
+  animation: fadeIn 0.3s;
+}
+
+.user-message {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-bubble {
+  background-color: #007aff;
+  color: white;
+  border-radius: 18px 18px 4px 18px;
+  padding: 12px 16px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.ai-message {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ai-bubble {
+  background-color: #f0f0f0;
+  border-radius: 18px 18px 18px 4px;
+  padding: 12px 16px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.source-citation {
+  font-size: 12px;
+  color: #007aff;
+  margin-top: 4px;
+  text-decoration: none;
+}
+
+/* 卡片样式 */
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.card-subtitle {
+  color: #86868b;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 设置列表样式 */
+.settings-list {
+  margin-top: 20px;
+}
+
+.settings-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.settings-item-left {
+  display: flex;
+  align-items: center;
+}
+
+.settings-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+/* 框架布局样式 */
+.frames-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.frame-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .frames-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 加载动画 */
+.typing-indicator {
+  display: flex;
+  padding: 5px;
+}
+
+.typing-indicator span {
+  height: 8px;
+  width: 8px;
+  background-color: #b0b0b0;
+  border-radius: 50%;
+  margin: 0 2px;
+  display: inline-block;
+  animation: bounce 1.3s linear infinite;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+  0%, 60%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-5px); }
+} 

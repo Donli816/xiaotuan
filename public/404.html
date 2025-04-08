@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - 页面未找到</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .error-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+      padding: 20px;
+    }
+    
+    .error-icon {
+      font-size: 80px;
+      color: #8e8e93;
+      margin-bottom: 20px;
+    }
+    
+    .error-title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    
+    .error-message {
+      color: #8e8e93;
+      margin-bottom: 30px;
+    }
+    
+    .home-button {
+      background-color: #007aff;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="iphone-container">
+    <div class="status-bar">
+      <div class="status-bar-left">
+        <span>9:41</span>
+      </div>
+      <div class="status-bar-center">
+        <span>智搜</span>
+      </div>
+      <div class="status-bar-right">
+        <span>
+          <i class="fas fa-signal"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-full"></i>
+        </span>
+      </div>
+    </div>
+    
+    <div class="app-content">
+      <div class="error-container">
+        <div class="error-icon">
+          <i class="fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error-title">页面未找到</div>
+        <div class="error-message">抱歉，您访问的页面不存在或已被移除</div>
+        <a href="index.html" class="home-button">返回首页</a>
+      </div>
+    </div>
+    
+    <div class="tab-bar">
+      <a href="home.html" class="tab-item">
+        <div class="tab-icon"><i class="fas fa-home"></i></div>
+        <div>首页</div>
+      </a>
+      <a href="chat.html" class="tab-item">
+        <div class="tab-icon"><i class="fas fa-search"></i></div>
+        <div>搜索</div>
+      </a>
+      <a href="history.html" class="tab-item">
+        <div class="tab-icon"><i class="fas fa-history"></i></div>
+        <div>历史</div>
+      </a>
+      <a href="collections.html" class="tab-item">
+        <div class="tab-icon"><i class="fas fa-bookmark"></i></div>
+        <div>收藏</div>
+      </a>
+      <a href="settings.html" class="tab-item">
+        <div class="tab-icon"><i class="fas fa-cog"></i></div>
+        <div>设置</div>
+      </a>
+    </div>
+  </div>
+</body>
+</html> 

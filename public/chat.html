@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智搜 - 对话搜索</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="chat">
+  <div class="status-bar"></div>
+  
+  <div class="app-content">
+    <!-- 对话内容 -->
+    <div class="message-container">
+      <!-- 用户消息 -->
+      <div class="message user-message">
+        <div class="user-bubble">
+          中国新能源汽车市场的最新发展趋势
+        </div>
+      </div>
+      
+      <!-- AI回复 -->
+      <div class="message ai-message">
+        <div>
+          <div class="ai-bubble">
+            中国新能源汽车市场近年来发展迅速，目前呈现以下主要趋势：
+            <br><br>
+            <strong>1. 市场规模持续扩大</strong><br>
+            2023年中国新能源汽车销量突破900万辆，同比增长约30%，市场渗透率已超过35%。预计到2025年，新能源汽车销量将占到中国汽车市场总销量的50%以上。
+            <br><br>
+            <strong>2. 技术迭代加速</strong><br>
+            电池技术方面，随着磷酸铁锂、固态电池等技术的应用和进步，车辆续航里程显著提升，平均已超过500公里；快充技术也取得突破，部分车型已实现15分钟内充电80%。
+            <br><br>
+            <strong>3. 智能化程度提升</strong><br>
+            智能座舱与智能驾驶功能成为新能源汽车发展重点，L2+级别自动驾驶功能已成为中高端车型标配，城市NOA(导航辅助驾驶)功能进一步普及。
+          </div>
+          <div style="margin-top: 8px; font-size: 12px; padding-left: 15px;">
+            <a href="#" class="source-citation"><i class="fas fa-link"></i> 《中国汽车工业协会2023年报告》</a>
+          </div>
+          <div style="margin-top: 4px; font-size: 12px; padding-left: 15px;">
+            <a href="#" class="source-citation"><i class="fas fa-link"></i> 《2023中国新能源汽车市场白皮书》</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 更多AI回复 -->
+      <div class="message ai-message">
+        <div>
+          <div class="ai-bubble">
+            <strong>4. 价格竞争白热化</strong><br>
+            传统车企与造车新势力不断降价，10-15万元区间的高性价比车型大幅增加，竞争加剧。同时，高端市场也日趋活跃，30万元以上的高端新能源车型需求增长迅速。
+            <br><br>
+            <strong>5. 出海战略加速</strong><br>
+            中国新能源汽车加速出海，2023年出口量超过120万辆，同比增长超过60%。欧洲、东南亚成为主要出口市场，部分中国品牌已在海外建立生产基地。
+            <br><br>
+            <strong>6. 产业链整合</strong><br>
+            上下游产业链整合趋势明显，整车厂商通过投资或收购电池、芯片等关键零部件供应商来加强供应链控制和技术优势。
+          </div>
+          <div style="margin-top: 8px; font-size: 12px; padding-left: 15px;">
+            <a href="#" class="source-citation"><i class="fas fa-link"></i> 《中国新能源汽车出口分析报告》</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 相关问题推荐 -->
+      <div style="margin: 20px 0; padding: 15px; background-color: #f8f8f8; border-radius: 12px;">
+        <div style="font-weight: 600; margin-bottom: 10px;">相关问题</div>
+        <div style="margin-bottom: 8px;"><a href="#" style="color: #007aff; text-decoration: none;"><i class="fas fa-angle-right" style="font-size: 12px;"></i> 中国主要新能源汽车品牌有哪些？</a></div>
+        <div style="margin-bottom: 8px;"><a href="#" style="color: #007aff; text-decoration: none;"><i class="fas fa-angle-right" style="font-size: 12px;"></i> 新能源汽车补贴政策最新变化</a></div>
+        <div><a href="#" style="color: #007aff; text-decoration: none;"><i class="fas fa-angle-right" style="font-size: 12px;"></i> 电动汽车与燃油车成本对比分析</a></div>
+      </div>
+    </div>
+    
+    <!-- 底部输入框 -->
+    <div style="position: fixed; bottom: 90px; left: 0; right: 0; padding: 10px; background-color: #ffffff; border-top: 1px solid #e0e0e0;">
+      <div style="display: flex; align-items: center;">
+        <div style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+          <i class="fas fa-plus" style="color: #8e8e93;"></i>
+        </div>
+        <div style="flex: 1; background-color: #f0f0f0; border-radius: 20px; display: flex; align-items: center; padding: 0 15px;">
+          <input type="text" placeholder="问点什么..." style="flex: 1; border: none; background: transparent; height: 40px; outline: none;">
+          <i class="fas fa-microphone" style="color: #8e8e93; margin-left: 10px;"></i>
+        </div>
+        <div style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+          <i class="fas fa-paper-plane" style="color: #007aff;"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tab-bar"></div>
+  
+  <script src="js/components.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html> 

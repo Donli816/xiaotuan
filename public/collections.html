@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智搜 - 我的收藏</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="collections">
+  <div class="status-bar"></div>
+  
+  <div class="app-content">
+    <!-- 页面标题和操作 -->
+    <div style="padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;">
+      <h1 style="font-size: 22px; margin: 0;">我的收藏</h1>
+      <div style="display: flex; gap: 10px;">
+        <button style="background: none; border: none; color: #8e8e93; display: flex; align-items: center;">
+          <i class="fas fa-ellipsis-h"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- 分类标签 -->
+    <div style="padding: 0 20px; margin-bottom: 20px; display: flex; overflow-x: auto; gap: 10px;">
+      <button style="background-color: #007aff; color: white; border: none; padding: 8px 16px; border-radius: 20px; font-size: 14px; white-space: nowrap;">
+        全部
+      </button>
+      <button style="background-color: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; font-size: 14px; white-space: nowrap;">
+        科技
+      </button>
+      <button style="background-color: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; font-size: 14px; white-space: nowrap;">
+        商业
+      </button>
+      <button style="background-color: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; font-size: 14px; white-space: nowrap;">
+        教育
+      </button>
+      <button style="background-color: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; font-size: 14px; white-space: nowrap;">
+        健康
+      </button>
+    </div>
+    
+    <!-- 收藏内容 -->
+    <div style="padding: 0 20px;">
+      <!-- 收藏项 -->
+      <div class="card" style="margin-bottom: 20px;">
+        <div class="card-content" style="padding: 15px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+            <div style="font-weight: 600; font-size: 17px;">生成式AI发展现状与未来趋势</div>
+            <div style="color: #8e8e93; font-size: 12px;">昨天收藏</div>
+          </div>
+          <div style="color: #8e8e93; font-size: 14px; margin-bottom: 12px;">
+            生成式AI在2023年取得了显著突破，特别是在自然语言处理、图像生成和多模态能力方面。未来趋势将朝向更强的上下文理解能力、更低的计算成本和更广泛的应用场景发展...
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; gap: 8px;">
+              <span style="background-color: #e3f2fd; color: #2196f3; padding: 4px 8px; border-radius: 12px; font-size: 12px;">科技</span>
+              <span style="background-color: #e8f5e9; color: #4caf50; padding: 4px 8px; border-radius: 12px; font-size: 12px;">AI</span>
+            </div>
+            <button style="background: none; border: none; color: #ff3b30; display: flex; align-items: center; font-size: 14px;">
+              <i class="fas fa-trash-alt" style="margin-right: 4px;"></i> 删除
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card" style="margin-bottom: 20px;">
+        <div class="card-content" style="padding: 15px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+            <div style="font-weight: 600; font-size: 17px;">中国新能源汽车市场的最新发展趋势</div>
+            <div style="color: #8e8e93; font-size: 12px;">今天收藏</div>
+          </div>
+          <div style="color: #8e8e93; font-size: 14px; margin-bottom: 12px;">
+            中国新能源汽车市场近年来发展迅速，2023年销量突破900万辆，同比增长约30%。随着技术迭代和政策支持，市场前景持续向好...
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; gap: 8px;">
+              <span style="background-color: #fff3e0; color: #ff9800; padding: 4px 8px; border-radius: 12px; font-size: 12px;">商业</span>
+              <span style="background-color: #fce4ec; color: #e91e63; padding: 4px 8px; border-radius: 12px; font-size: 12px;">汽车</span>
+            </div>
+            <button style="background: none; border: none; color: #ff3b30; display: flex; align-items: center; font-size: 14px;">
+              <i class="fas fa-trash-alt" style="margin-right: 4px;"></i> 删除
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card" style="margin-bottom: 20px;">
+        <div class="card-content" style="padding: 15px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+            <div style="font-weight: 600; font-size: 17px;">量子计算的实际应用场景分析</div>
+            <div style="color: #8e8e93; font-size: 12px;">3天前收藏</div>
+          </div>
+          <div style="color: #8e8e93; font-size: 14px; margin-bottom: 12px;">
+            量子计算虽然仍处于早期发展阶段，但在密码学、药物研发、金融建模和物流优化等领域已经显示出巨大潜力。预计在未来5-10年内将逐步实现商业化应用...
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; gap: 8px;">
+              <span style="background-color: #e3f2fd; color: #2196f3; padding: 4px 8px; border-radius: 12px; font-size: 12px;">科技</span>
+              <span style="background-color: #f3e5f5; color: #9c27b0; padding: 4px 8px; border-radius: 12px; font-size: 12px;">计算</span>
+            </div>
+            <button style="background: none; border: none; color: #ff3b30; display: flex; align-items: center; font-size: 14px;">
+              <i class="fas fa-trash-alt" style="margin-right: 4px;"></i> 删除
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card" style="margin-bottom: 20px;">
+        <div class="card-content" style="padding: 15px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+            <div style="font-weight: 600; font-size: 17px;">ChatGPT与Claude性能对比分析</div>
+            <div style="color: #8e8e93; font-size: 12px;">上周收藏</div>
+          </div>
+          <div style="color: #8e8e93; font-size: 14px; margin-bottom: 12px;">
+            ChatGPT和Claude作为目前最受欢迎的两大对话AI模型，各有优势。在安全性、技术规格、功能特点和适用场景等多个维度的详细对比...
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; gap: 8px;">
+              <span style="background-color: #e3f2fd; color: #2196f3; padding: 4px 8px; border-radius: 12px; font-size: 12px;">科技</span>
+              <span style="background-color: #e8f5e9; color: #4caf50; padding: 4px 8px; border-radius: 12px; font-size: 12px;">AI</span>
+            </div>
+            <button style="background: none; border: none; color: #ff3b30; display: flex; align-items: center; font-size: 14px;">
+              <i class="fas fa-trash-alt" style="margin-right: 4px;"></i> 删除
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 创建新收藏夹按钮 -->
+      <div style="text-align: center; margin: 30px 0 100px;">
+        <button style="background-color: #007aff; border: none; padding: 10px 20px; border-radius: 20px; color: white; font-weight: 500; display: flex; align-items: center; margin: 0 auto;">
+          <i class="fas fa-plus" style="margin-right: 8px;"></i> 创建新收藏夹
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tab-bar"></div>
+  
+  <script src="js/components.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html> 

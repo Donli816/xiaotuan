@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智搜 - 首页</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="home">
+  <div class="status-bar"></div>
+  
+  <div class="app-content">
+    <!-- 搜索区域 -->
+    <div class="search-container">
+      <div class="search-bar">
+        <i class="fas fa-search" style="color: #8e8e93;"></i>
+        <input type="text" class="search-input" placeholder="搜索或提问任何问题...">
+        <i class="fas fa-microphone" style="color: #8e8e93;"></i>
+      </div>
+    </div>
+    
+    <!-- 推荐问题 -->
+    <div style="padding: 0 20px;">
+      <div style="margin-bottom: 15px; font-weight: 600;">热门搜索</div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-title">人工智能将如何改变未来的医疗保健？</div>
+          <button style="background-color: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; font-size: 14px;">
+            <i class="fas fa-search"></i> 搜索
+          </button>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-content">
+          <div class="card-title">中国新能源汽车市场的最新发展趋势</div>
+          <button style="background-color: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; font-size: 14px;">
+            <i class="fas fa-search"></i> 搜索
+          </button>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-content">
+          <div class="card-title">2023年最值得关注的科技创新有哪些？</div>
+          <button style="background-color: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; font-size: 14px;">
+            <i class="fas fa-search"></i> 搜索
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 快捷功能区 -->
+    <div style="padding: 20px;">
+      <div style="margin-bottom: 15px; font-weight: 600;">快捷功能</div>
+      <div style="display: flex; justify-content: space-between;">
+        <div style="display: flex; flex-direction: column; align-items: center; width: 22%;">
+          <div style="width: 50px; height: 50px; background-color: #E3F2FD; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-image" style="color: #2196F3;"></i>
+          </div>
+          <div style="font-size: 12px; margin-top: 8px; text-align: center;">图片搜索</div>
+        </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; width: 22%;">
+          <div style="width: 50px; height: 50px; background-color: #E8F5E9; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-file-alt" style="color: #4CAF50;"></i>
+          </div>
+          <div style="font-size: 12px; margin-top: 8px; text-align: center;">文档分析</div>
+        </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; width: 22%;">
+          <div style="width: 50px; height: 50px; background-color: #FFF3E0; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-language" style="color: #FF9800;"></i>
+          </div>
+          <div style="font-size: 12px; margin-top: 8px; text-align: center;">翻译助手</div>
+        </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; width: 22%;">
+          <div style="width: 50px; height: 50px; background-color: #F3E5F5; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-book" style="color: #9C27B0;"></i>
+          </div>
+          <div style="font-size: 12px; margin-top: 8px; text-align: center;">学术研究</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 最近搜索 -->
+    <div style="padding: 0 20px 100px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+        <div style="font-weight: 600;">最近搜索</div>
+        <a href="history.html" style="color: #007aff; text-decoration: none; font-size: 14px;">查看更多</a>
+      </div>
+      
+      <div class="card">
+        <div class="card-content" style="padding: 12px 15px;">
+          <div style="font-size: 14px;"><i class="fas fa-history" style="color: #8e8e93; margin-right: 8px;"></i>生成式AI的发展历程</div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-content" style="padding: 12px 15px;">
+          <div style="font-size: 14px;"><i class="fas fa-history" style="color: #8e8e93; margin-right: 8px;"></i>大模型与传统搜索引擎的区别</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tab-bar"></div>
+  
+  <script src="js/components.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html> 
